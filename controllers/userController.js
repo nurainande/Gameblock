@@ -94,7 +94,7 @@ export const signin = async (req, res) => {
 
 export const logout = async (req, res) => {
     res.clearCookie("authToken");
-    res.status(200).json({ success: true, message: "User Logged out successfully" });
+    res.status(200).json({ success: true, message: "Logged out successfully" });
 };
 
 export const checkLoggedInUser = async (req, res) => {
